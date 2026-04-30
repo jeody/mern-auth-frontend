@@ -22,6 +22,7 @@ const ChangeRole = ({ _id, email }) => {
 
     if (!userRole) {
       toast.error('Please select a role');
+      return;
     }
 
     const userData = {
@@ -30,9 +31,9 @@ const ChangeRole = ({ _id, email }) => {
     };
 
     const emailData = {
-      subject: 'Account Role Changed - AUTH:J',
+      subject: 'Account Role Changed - AFPSAT',
       send_to: email,
-      reply_to: 'noreply@chr.com',
+      reply_to: 'noreply@afpsat.com',
       template: 'changeRole',
       url: '/login',
     };

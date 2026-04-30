@@ -7,10 +7,6 @@ import { useDispatch } from 'react-redux';
 import { RESET, logout } from '../../redux/features/auth/authSlice';
 import { ShowOnLogin, ShowOnLogout } from '../protect/hiddenLink';
 import { UserName } from '../../pages/profile/Profile';
-// import { useDispatch } from 'react-redux';
-// import { logout, RESET } from '../../redux/features/auth/authSlice';
-// import { ShowOnLogin, ShowOnLogout } from '../protect/hiddenLink';
-// import { UserName } from '../../pages/profile/Profile';
 
 const activeLink = ({ isActive }) => (isActive ? 'active' : '');
 
@@ -33,7 +29,7 @@ const Header = () => {
       <nav>
         <div className='logo' onClick={goHome}>
           <BiLogIn size={35} />
-          <span>AUTH:J</span>
+          <span>AFPSAT</span>
         </div>
         <ul className='home-links'>
           <ShowOnLogin>

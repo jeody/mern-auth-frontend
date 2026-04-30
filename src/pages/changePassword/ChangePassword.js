@@ -54,9 +54,9 @@ const ChangePassword = () => {
     };
 
     const emailData = {
-      subject: 'Password Changed - AUTH:J',
+      subject: 'Password Changed - AFPSAT',
       send_to: user.email,
-      reply_to: 'noreply@chr.com',
+      reply_to: 'noreply@afpsat.com',
       template: 'changePassword',
       url: '/forgot',
     };

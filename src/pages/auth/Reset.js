@@ -49,7 +49,7 @@ const Reset = () => {
   };
 
   useEffect(() => {
-    if (isSuccess && message.includes('Reset succesful')) {
+    if (isSuccess && message.includes('Reset Successful')) {
       navigate('/login');
     }
 
